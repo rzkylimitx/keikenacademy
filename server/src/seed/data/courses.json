@@ -2,11 +2,11 @@
   {
     "courseId": "3a9f3d6c-c391-4b1c-9c3d-6c3f3d6c3f3d",
     "teacherId": "user_7kFh92JkCpQw3N8M5L4xRzVtYs",
-    "teacherName": "Azriel Si Mekar Laba Laba Jawa",
-    "title": "ANIME KELAS KING",
+    "teacherName": "John Doe",
+    "title": "Introduction to Programming",
     "description": "Learn the basics of programming with this comprehensive course.",
     "category": "Computer Science",
-    "image": "https://i.pinimg.com/736x/b3/49/f5/b349f5157d5f3b43186805a07394bfa4.jpg",
+    "image": "https://images.pexels.com/photos/5905888/pexels-photo-5905888.jpeg",
     "price": 4999,
     "level": "Beginner",
     "status": "Published",
@@ -24,8 +24,8 @@
             "chapterId": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
             "type": "Video",
             "title": "Welcome to Programming",
-            "content": "https://youtu.be/A6Dkufm_izQ?si=q6RqwcY3pQKF7fpO",
-            "video": "https://youtu.be/A6Dkufm_izQ?si=q6RqwcY3pQKF7fpO",
+            "content": "https://example.com/videos/welcome.mp4",
+            "video": "https://example.com/videos/welcome.mp4",
             "comments": [
               {
                 "commentId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",

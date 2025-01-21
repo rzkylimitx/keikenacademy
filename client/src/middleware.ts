@@ -15,23 +15,19 @@ export default clerkMiddleware(async (auth, req) => {
   const userRole = metadata?.userType;
 
   // Only redirect if we have a valid role
-  if (!userRole) {
-    // Jika userType tidak ditemukan, biarkan request lanjut (atau redirect ke login jika diperlukan)
-    return NextResponse.next();
-  }
-
-  // Redirect jika role tidak sesuai
-  if (isTeacherRoute(req)) {
-    if (userRole !== "teacher") {
-      const url = new URL("/user/courses", req.url);
-      return NextResponse.redirect(url);
+ if (userRole) {
+    if (isTeacherRoute(req)) {
+      if (userRole !== "teacher") {
+        const url = new URL("/user/courses", req.url);
+        return NextResponse.redirect(url);
+      }
     }
-  }
 
-  if (isStudentRoute(req)) {
-    if (userRole !== "student") {
-      const url = new URL("/teacher/courses", req.url);
-      return NextResponse.redirect(url);
+    if (isStudentRoute(req)) {
+      if (userRole !== "student") {
+        const url = new URL("/teacher/courses", req.url);
+        return NextResponse.redirect(url);
+      }
     }
   }
 
